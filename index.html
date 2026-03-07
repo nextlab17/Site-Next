@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT LAB - Projetando o Próximo Nível</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif']
+                    },
+                    colors: {
+                        'azul-marinho': '#061F3D',
+                        'azul-medio': '#157399',
+                        'ciano-vibrante': '#20C5F2',
+                        'laranja-vibrante': '#FF6F00',
+                        'cinza-medio': '#A0B0C4',
+                        'neutro-claro': '#F4F6F8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-7xl px-4 h-20 flex justify-between items-center">
+
+            <a href="#">
+                <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo" class="h-10 mr-4">
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="./index.html" class="text-laranja-vibrante font-semibold hover:text-laranja-vibrante 
+                transition-colors border-b-2 border-laranja-vibrante pb-1">Início</a>
+                <a href="./projetos.html"
+                    class="text-azul-marinho font-medium hover:text-laranja-vibrante 
+                transition-colors">Projetos</a>
+                <a href="https://linktr.ee/labnext"  target="_blank" rel="noopener noreferrer"
+                    class="text-azul-marinho font-medium hover:text-laranja-vibrante 
+                transition-colors">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="relative h-[500px] bg-azul-medio flex items-center">
+            <img src="./assets/membrosnEXT.jpg" alt="Membros do Next Lab"
+                class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-70">
+
+            <div class="container mx-auto max-w-6xl px-4 relative z-10">
+                <div class="max-w-xl text-white">
+                    
+                    <h1 class="text-5xl font-bold mb-4">NEXT LAB: Projetando o Próximo Nível</h1>
+                    <p class="text-lg font-regular mb-8">
+                        Next Lab é um laboratório de inovação dedicado a transformar ideias visionárias em soluções
+                        tecnológicas de ponta. Nossa missão é impulsionar o futuro através da pesquisa, desenvolvimento
+                        e colaboração.
+                    </p>
+                    <a href="./projetos.html"
+                        class="bg-azul-marinho text-white font-bold py-3 px-6 rounded-md hover:bg-laranja-vibrante 
+                transition-colors shadow-lg">
+                        Conheça Nossos Projetos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="bg-white py-20">
+            <div class="container mx-auto max-w-7xl px-4">
+
+                <h2 class="text-3xl font-semibold text-azul-marinho text-center mb-12 relative inline-block left-1/2 -translate-x-1/2">
+                    Nossas Áreas de Atuação
+                    <span class="block w-16 h-1 bg-laranja-vibrante mx-auto mt-4 rounded-full"></span>
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                    <div class="bg-neutro-claro p-8 rounded-xl shadow-md text-center border-b-4 border-transparent hover:border-ciano-vibrante hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto bg-ciano-vibrante/10 rounded-full flex items-center justify-center mb-6"><img src="./assets/lâmpada.png" alt="Ícone de Inovação" class="w-8 h-8 text-ciano-vibrante">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Inovação & Pesquisa</h3>
+                        <p class="text-azul-marinho/80 font-regular mb-5 leading-relaxed">
+                            Desenvolvemos soluções inovadoras por meio de pesquisa aplicada, criando tecnologias que
+                            impulsionam novos mercados e oportunidades.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-neutro-claro p-8 rounded-xl shadow-md text-center border-b-4 border-transparent hover:border-azul-medio hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto bg-azul-medio/10 rounded-full flex items-center justify-center mb-6"><img src="./assets/engrenagem.png" alt="Ícone de Desenvolvimento" class="w-8 h-8 text-azul-medio">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Desenvolvimento de Software</h3>
+                        <p class="text-azul-marinho/80 font-regular mb-5 leading-relaxed">
+                            Projetamos e desenvolvemos sistemas sob medida, focados em desempenho, escalabilidade e
+                            qualidade.
+                        </p>
+                    </div>
+
+                    <div class="bg-neutro-claro p-8 rounded-xl shadow-md text-center border-b-4 border-transparent hover:border-ciano-vibrante hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-16 h-16 mx-auto bg-ciano-vibrante/10 rounded-full flex items-center justify-center mb-6">
+                            <img src="./assets/conexao-de-internet.png" alt="Ícone de IoT" class="w-8 h-8 text-ciano-vibrante">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Desenvolvimento de IoT</h3>
+                        <p class="text-azul-marinho/80 font-regular mb-5 leading-relaxed">
+                         Conectamos dispositivos à nuvem com soluções inteligentes de sensoriamento e automação para monitoramento em tempo real e eficiência operacional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-neutro-claro py-20 relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-laranja-vibrante opacity-5 blur-3xl"></div>
+            
+            <div class="container mx-auto max-w-7xl px-4 relative z-10">
+                <h2 class="text-3xl font-semibold text-azul-marinho text-center mb-12 relative inline-block left-1/2 -translate-x-1/2">
+                    Nossos Valores
+                    <span class="block w-16 h-1 bg-ciano-vibrante mx-auto mt-4 rounded-full"></span>
+                </h2>
+
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+         
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl text-center border-b-4 border-transparent hover:border-laranja-vibrante transition-all duration-300 group">
+                        <div class="w-14 h-14 mx-auto bg-laranja-vibrante/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-laranja-vibrante/20 transition-colors">
+                            <img src="./assets/raio.png" alt="Ícone de Impacto Prático" class="w-7 h-7 text-laranja-vibrante">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Impacto Prático</h3>
+                        <p class="text-azul-marinho/70 font-regular text-sm leading-relaxed">
+                            Nosso foco é construir soluções reais. Valorizamos cada pequeno passo e aprendizado que nos leva a criar algo útil.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl text-center border-b-4 border-transparent hover:border-laranja-vibrante transition-all duration-300 group">
+                        <div class="w-14 h-14 mx-auto bg-laranja-vibrante/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-laranja-vibrante/20 transition-colors">
+                            <img src="./assets/pessoas.png" alt="Ícone de Colaboração" class="w-7 h-7 text-laranja-vibrante">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Colaboração</h3>
+                        <p class="text-azul-marinho/70 font-regular text-sm leading-relaxed">
+                            Somos um ambiente de mentes inquietas. Acreditamos na troca aberta de ideias, na experimentação e no crescimento coletivo.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl text-center border-b-4 border-transparent hover:border-laranja-vibrante transition-all duration-300 group">
+                        <div class="w-14 h-14 mx-auto bg-laranja-vibrante/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-laranja-vibrante/20 transition-colors">
+                            <img src="./assets/evolução.png" alt="Ícone de Evolução" class="w-7 h-7 text-laranja-vibrante">
+                        </div>
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Evolução</h3>
+                        <p class="text-azul-marinho/70 font-regular text-sm leading-relaxed">
+                            Entendemos a qualidade como um processo. Nosso compromisso é com o estudo contínuo e a melhoria a cada novo projeto.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl text-center border-b-4 border-transparent hover:border-laranja-vibrante transition-all duration-300 group">
+                        <div class="w-14 h-14 mx-auto bg-laranja-vibrante/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-laranja-vibrante/20 transition-colors">
+                            <img src="./assets/lupa.png" alt="Ícone de Curiosidade" class="w-7 h-7 text-laranja-vibrante">
+                        </div>   
+                        <h3 class="text-xl font-semibold text-azul-marinho mb-3">Curiosidade</h3>
+                        <p class="text-azul-marinho/70 font-regular text-sm leading-relaxed">
+                            Mantemos a mente aberta para testar, errar, aprender e descobrir novos caminhos no vasto mundo da tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-azul-marinho py-16 relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-64 h-64 rounded-full border-4 border-azul-medio opacity-30"></div>
+            
+            <div class="container mx-auto max-w-4xl px-4 text-center relative z-10">
+                <h2 class="text-3xl font-semibold text-white mb-6">
+                    Tem um projeto em mente?
+                </h2>
+                <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+                    <p class="text-neutro-claro font-regular text-lg md:text-left max-w-lg">
+                        Vamos construir o próximo nível juntos. Clique no botão abaixo e fale com nossa equipe.
+                    </p>
+                    <a href="https://linktr.ee/labnext" target="_blank" rel="noopener noreferrer" 
+                    class="inline-flex items-center justify-center bg-laranja-vibrante text-white font-bold py-3 px-8 rounded-md hover:bg-[#e66400] hover:scale-105 transition-all h-14 whitespace-nowrap shadow-lg">
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+<footer class="bg-[#041529] text-white"> 
+    <div class="container flex flex-col items-center justify-between p-8 mx-auto space-y-4 sm:space-y-0 sm:flex-row border-t border-azul-medio/30">
+        <div class="flex items-center space-x-4">
+        <a href="#">
+            <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo"
+                        class="h-8 mr-4 invert brightness-0 opacity-80 hover:opacity-100 transition-opacity">
+        </a>
+        <p class="text-sm text-gray-400"> © 2024 Next Lab. Todos os direitos reservados.</p></div>
+        <div class="flex gap-5 brightness-0 invert hue-rotate-180 opacity-70">
+    
+            <a href="" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="logo discord"  target="_blank" rel="noopener noreferrer"><img src="./assets/discord.png"></a>
+            <a href="https://www.instagram.com/lab.next" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="logo instagram"  target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.png"></a>
+            <a href="https://www.linkedin.com/in/next-lab-191624398/" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="logo linkedin"  target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin.png"></a>
+            <a href="https://www.youtube.com/@1Next_Lab" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="logo youtube"  target="_blank" rel="noopener noreferrer"><img src="./assets/youtube.png"></a>
+            <a href="" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="logo github"  target="_blank" rel="noopener noreferrer"><img src="./assets/github.png"></a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
