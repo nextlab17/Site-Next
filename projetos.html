@@ -48,15 +48,16 @@
 
 <body class="bg-white text-azul-marinho">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto max-w-7xl px-4 h-20 flex justify-between items-center">
-            <a href="./index.html">
-                <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo" class="h-10 mr-4">
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-7xl px-4 h-20 flex justify-between items-center relative z-50">
+            <a href="#">
+                <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo" class="h-8 md:h-10 mr-2 md:mr-4">
             </a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="./index.html" class="text-azul-marinho font-medium hover:text-orange-500 transition-colors">Início</a>
-                <a href="./sobre.html" class="text-azul-marinho font-medium hover:text-orange-500 transition-colors">Projetos</a>
-                <a href="https://linktr.ee/labnext" target="_blank" rel="noopener noreferrer" class="text-azul-marinho font-medium hover:text-orange-500 transition-colors">Contato</a>
+
+            <div id="main-menu" class="flex items-center space-x-4 md:space-x-8">
+                <a href="./index.html" class="text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Início</a>
+                <a href="./projetos.html" class="text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Projetos</a>
+                <a href="https://linktr.ee/labnext" target="_blank" rel="noopener noreferrer" class="hidden md:block text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Contato</a>
             </div>
         </nav>
     </header>
@@ -71,7 +72,6 @@
                 <p class="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto font-regular">
                    No NEXT LAB, a gente não fica só na teoria. Abaixo, você confere nossos projetos tanto os já <strong>desenvolvidos</strong> quanto os que estão <strong>em desenvolvimento</strong> que unem horas de pesquisa, testes de hardware e muito código para resolver problemas de verdade.
                 </p>
-                
                 <div class="mt-16 flex justify-center animate-bounce">
                     <svg class="w-6 h-6 text-cinza-medio" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -89,47 +89,21 @@
 
                 <div class="flex flex-col gap-12 md:gap-0">
                     
-                    <!-- Projeto 1 -->
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
-                        <div class="md:col-span-4 md:text-right pt-1">
-                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Monitoramento de Pontes</h3>
-                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest">Engenharia Civil</p>
+                        <div class="md:col-span-4 md:text-right pt-1 flex flex-col md:items-end">
+                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Monitoramento de Temperatura</h3>
+                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest mb-2">IoT & Automação</p>
+                            <span class="inline-block bg-ciano-vibrante text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider w-max">Concluído</span>
                         </div>
-                        
                         <div class="hidden md:flex md:col-span-1 justify-center relative">
                             <div class="w-0.5 h-full bg-neutro-claro linha-divisoria relative">
-                                <div class="absolute top-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-azul-medio"></div>
+                                <div class="absolute top-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-ciano-vibrante shadow-[0_0_8px_rgba(32,197,242,0.8)]"></div>
                             </div>
                         </div>
 
                         <div class="md:col-span-7 pb-12 md:pb-24 border-b-2 md:border-b-0 border-neutro-claro md:pl-2">
                             <p class="text-gray-600 leading-relaxed text-lg mb-6">
-                                Desenvolvimento de uma rede inteligente composta por 9 sensores para avaliação estrutural em tempo real. O sistema é capaz de detectar padrões de fadiga e ressonância na estrutura física através da comunicação com microcontroladores ESP32.
-                            </p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">ESP32</span>
-                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">MPU-6050</span>
-                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">Hardware</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Projeto 2 -->
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
-                        <div class="md:col-span-4 md:text-right pt-1">
-                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Sensores de Umidade</h3>
-                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest">IoT & Agronegócio</p>
-                        </div>
-                        
-                        <div class="hidden md:flex md:col-span-1 justify-center relative">
-                            <div class="w-0.5 h-full bg-neutro-claro linha-divisoria relative">
-                                <div class="absolute top-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-azul-medio"></div>
-                            </div>
-                        </div>
-
-                        <div class="md:col-span-7 pb-12 md:pb-24 border-b-2 md:border-b-0 border-neutro-claro md:pl-2">
-                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
-                                Sistema de monitoramento ambiental contínuo com integração direta à nuvem. Projetado para aplicações agrícolas e laboratoriais, permite a coleta precisa de dados meteorológicos para tomada de decisão baseada em dados em tempo real.
+                                Plataforma validada e integrada com sensores IoT. O sistema coleta, processa e envia dados de temperatura e umidade diretamente para a nuvem. Permite o acompanhamento preciso do ambiente, garantindo tomadas de decisão baseadas em dados em tempo real.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">AM2302</span>
@@ -139,22 +113,45 @@
                         </div>
                     </div>
 
-                    <!-- Projeto 3 -->
+                    <!-- Projeto 2 (Pontes - EM DESENVOLVIMENTO) -->
                     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
-                        <div class="md:col-span-4 md:text-right pt-1">
-                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Calibração de ECG</h3>
-                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest">Saúde Digital</p>
+                        <div class="md:col-span-4 md:text-right pt-1 flex flex-col md:items-end">
+                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Monitoramento de Pontes</h3>
+                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest mb-2">Engenharia Civil</p>
+                            <span class="inline-block bg-laranja-vibrante text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider w-max">Em Desenvolvimento</span>
                         </div>
-                        
                         <div class="hidden md:flex md:col-span-1 justify-center relative">
                             <div class="w-0.5 h-full bg-neutro-claro linha-divisoria relative">
                                 <div class="absolute top-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-azul-medio"></div>
                             </div>
                         </div>
-
                         <div class="md:col-span-7 pb-12 md:pb-24 border-b-2 md:border-b-0 border-neutro-claro md:pl-2">
                             <p class="text-gray-600 leading-relaxed text-lg mb-6">
-                                Uma aplicação focada na precisão de equipamentos médicos. Desenvolvemos um sistema computacional de comparação e exportação de gráficos médicos para garantir a calibração perfeita e confiabilidade de sensores biomédicos.
+                                Estamos desenvolvendo uma rede inteligente composta por sensores para avaliação estrutural. O objetivo do sistema é conseguir detectar padrões de fadiga e ressonância na estrutura física através da comunicação com microcontroladores ESP32.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">ESP32</span>
+                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">MPU-6050</span>
+                                <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">Hardware</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 (ECG - EM DESENVOLVIMENTO) -->
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
+                        <div class="md:col-span-4 md:text-right pt-1 flex flex-col md:items-end">
+                            <h3 class="text-2xl font-bold text-azul-marinho mb-1">Calibração de ECG</h3>
+                            <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest mb-2">Saúde Digital</p>
+                            <span class="inline-block bg-laranja-vibrante text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider w-max">Em Desenvolvimento</span>
+                        </div>
+                        <div class="hidden md:flex md:col-span-1 justify-center relative">
+                            <div class="w-0.5 h-full bg-neutro-claro linha-divisoria relative">
+                                <div class="absolute top-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-azul-medio"></div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-7 pb-12 md:pb-24 border-b-2 md:border-b-0 border-neutro-claro md:pl-2">
+                            <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                                Trabalhando na criação de uma aplicação focada na precisão de equipamentos médicos. Estamos desenvolvendo a arquitetura de um sistema computacional de comparação e exportação de gráficos para garantir a calibração perfeita de sensores biomédicos.
                             </p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">Python</span>
@@ -165,7 +162,7 @@
                     </div>
 
                     <!-- Projeto 4 -->
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
+                   <!--  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
                         <div class="md:col-span-4 md:text-right pt-1">
                             <h3 class="text-2xl font-bold text-azul-marinho mb-1">Visão Autônoma</h3>
                             <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest">Mecânica & Robótica</p>
@@ -187,10 +184,10 @@
                                 <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">OpenCV</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                    <!-- Projeto 5 -->
-                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
+                   <!--  <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 projeto-item group">
                         <div class="md:col-span-4 md:text-right pt-1">
                             <h3 class="text-2xl font-bold text-azul-marinho mb-1">Análise de Estacas</h3>
                             <p class="text-xs font-bold text-cinza-medio uppercase tracking-widest">Fundações</p>
@@ -212,7 +209,7 @@
                                 <span class="bg-neutro-claro text-azul-marinho text-xs font-semibold px-3 py-1.5 rounded-sm">Engenharia Geotécnica</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>

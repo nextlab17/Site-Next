@@ -40,21 +40,17 @@
 
 <body class="bg-white">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto max-w-7xl px-4 h-20 flex justify-between items-center">
-
+  
+   <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-7xl px-4 h-20 flex justify-between items-center relative z-50">
             <a href="#">
-                <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo" class="h-10 mr-4">
+                <img src="./assets/d7998cea-167e-4b51-8590-5d81e6e705ab.png" alt="NEXT LAB Logo" class="h-8 md:h-10 mr-2 md:mr-4">
             </a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="./index.html" class="text-laranja-vibrante font-semibold hover:text-laranja-vibrante 
-                transition-colors border-b-2 border-laranja-vibrante pb-1">Início</a>
-                <a href="./projetos.html"
-                    class="text-azul-marinho font-medium hover:text-laranja-vibrante 
-                transition-colors">Projetos</a>
-                <a href="https://linktr.ee/labnext"  target="_blank" rel="noopener noreferrer"
-                    class="text-azul-marinho font-medium hover:text-laranja-vibrante 
-                transition-colors">Contato</a>
+
+            <div id="main-menu" class="flex items-center space-x-4 md:space-x-8">
+                <a href="./index.html" class="text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Início</a>
+                <a href="./projetos.html" class="text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Projetos</a>
+                <a href="https://linktr.ee/labnext" target="_blank" rel="noopener noreferrer" class="hidden md:block text-azul-marinho font-medium transition-colors hover:text-laranja-vibrante text-sm md:text-base">Contato</a>
             </div>
         </nav>
     </header>
